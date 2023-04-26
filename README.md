@@ -1,11 +1,20 @@
 # Al3jandr0 Tap
 
-## How do I install these formulae?
+## Formulas included in this Tap
 
-`brew install al3jandr0/tap/<formula>`
+- [Journalscript](https://github.com/al3jandr0/journalscript)
 
-Or `brew tap al3jandr0/tap` and then `brew install <formula>`.
+## Installation
+
+`brew install al3jandr0/homebrew-tap/<formula>`
+
+Or `brew tap al3jandr0/homebrew-tap` and then `brew install <formula>`.
+
+Example:
+```
+brew tap al3jandr0/homebrew-tap
+brew install journalscript
+```
 
 ## Documentation
-
 `brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
