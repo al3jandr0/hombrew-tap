@@ -1,15 +1,12 @@
 class Journalscript < Formula
   desc "Interactive command-line journaling tool"
   homepage "https://github.com/al3jandr0/journalscript"
-  url "https://github.com/al3jandr0/journalscript/archive/refs/tags/v0.0.2.tar.gz"
-  sha256 "335d41c1d8dba10ad310d5a00f94714e2798b24f7750866caca9804a40472e23"
+  url "https://github.com/al3jandr0/journalscript/archive/refs/tags/v0.1.0.tar.gz"
+  sha256 "aaa18bc0c4b8d5a61b2d6ef942ff26f09308f13e67ec95179cfb0d657e5acb94"
   license "MIT"
-  # TODO: this is to run test only, you could run test if youd liek but you must make your tets
-  # environment independet.  That is to reset Env var --- Actually. to laucn test with emptu Env
-  #depends_on "bats" => [:test]
   depends_on "bash"
   depends_on "coreutils"
- 
+
   def install
     bin.install "src/journal.sh" => "journal"
     prefix.install "README.md"
@@ -19,6 +16,6 @@ class Journalscript < Formula
   end
 
   test do
-    assert_equal "journalscript 0.0.2", shell_output(" #{bin}/journal -v").strip
-end
+    assert_equal "journalscript 0.1.0", shell_output(" #{bin}/journal -v").strip
+  end
 end
