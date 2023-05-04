@@ -1,4 +1,11 @@
-# Al3jandr0 Tap
+<h1 align="center">Al3jandr0's Tap</h1>
+<p align="center"> Homebrew tap with formulast of my projects</p>
+
+<div align="center">
+
+[![brew test-bot](https://github.com/al3jandr0/homebrew-tap/actions/workflows/tests.yml/badge.svg)](https://github.com/al3jandr0/homebrew-tap/actions/workflows/tests.yml)
+</div>
+
 
 ## Formulas included in this Tap
 
