@@ -1,8 +1,8 @@
 class Journalscript < Formula
   desc "Interactive command-line journaling tool"
   homepage "https://github.com/al3jandr0/journalscript"
-  url "https://github.com/al3jandr0/journalscript/archive/refs/tags/v0.5.4.tar.gz"
-  sha256 "f443b585c4d75fa2a3bdcd14aac58112d4a24e97b098c9b2c2489fb43baba8ad"
+  url "https://github.com/al3jandr0/journalscript/archive/refs/tags/v0.5.5.tar.gz"
+  sha256 "254f531d7a46ca232e5fa276c0a26157bc25c550ff10c4ca952b503d3b51a4e4"
   license "MIT"
   depends_on "bash"
   depends_on "coreutils"
@@ -16,6 +16,6 @@ class Journalscript < Formula
   end
 
   test do
-    assert_equal "journalscript 0.5.4", shell_output(" #{bin}/journal -v").strip
+    assert_equal "journalscript 0.5.5", shell_output(" #{bin}/journal -v").strip
   end
 end
